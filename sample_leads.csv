@@ -1,0 +1,7 @@
+First Name,Last Name,Email Address,Phone,Company Name,Lead Status,City,State,Country,Notes,Source,Created Date
+John,Doe,john.doe@example.com,+91-9876543210,GrowEasy,Interested,Mumbai,Maharashtra,India,Client is asking to reschedule demo,Facebook,2026-05-13
+Sarah,Johnson,sarah.johnson@example.com,+91-9876543211,Tech Solutions,Not Reachable,Bangalore,Karnataka,India,"Person was busy, will try again next week",Google Ads,2026-05-13
+Rajesh,Patel,rajesh.patel@example.com,+91-9876543212,Startup Inc,Not Interested,Delhi,Delhi,India,Not interested in our services,Website,2026-05-13
+Priya,Singh,priya.singh@example.com,+91-9876543213,Enterprise Corp,Converted,Pune,Maharashtra,India,"Deal closed, onboarding in progress",Referral,2026-05-14
+Alice,Brown,alice.brown@test.com,+1-5551234567,Acme Corp,Hot Lead,New York,New York,USA,Follow up next week,,2026-05-15
+Bob,,,,,,,,,,Manual Entry,

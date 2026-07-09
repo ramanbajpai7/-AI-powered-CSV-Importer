@@ -8,13 +8,24 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:3002',
+];
+
+if (process.env.FRONTEND_URL) {
+  allowedOrigins.push(...process.env.FRONTEND_URL.split(',').map(u => u.trim()));
+}
+
 app.use(
   cors({
-    origin: [
-      'http://localhost:3000',
-      'http://localhost:3002',
-      process.env.FRONTEND_URL || 'http://localhost:3000',
-    ],
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin) || origin.endsWith('.vercel.app')) {
+        callback(null, true);
+      } else {
+        callback(null, true);
+      }
+    },
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Accept'],
   })
